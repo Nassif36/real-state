@@ -1,0 +1,51 @@
+.sale-card {
+    max-width: 600px;
+    padding:1.5em;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+
+    .sale-status {
+        position: absolute;
+        top: -5%;
+        left: 6%;
+        padding: .5em 1.5em;
+        background-color: $primary;
+        color: white;
+        border-radius: 5px;
+    }
+    p {
+        padding: .9em 0;
+        font-weight: 600;
+        font-size: 1.3rem;
+    }
+    .property-footer {
+        justify-content: flex-start;
+        gap: 3em;
+        padding: .9em 0;
+    }
+    .sale-description {
+        padding: 1.5em 0;
+        line-height: 1.5;
+    }
+    .sale-buy {
+        @include flex;
+        justify-content: space-between;
+        padding: .9em 0;
+    }
+}
+    
+
+
+.sales-data {
+    p {
+        font-size: 250%;
+        color: $primary;
+    }
+    span {
+        font-weight: 400;
+        color: #212121a5;
+    }
+}

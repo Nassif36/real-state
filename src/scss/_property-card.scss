@@ -1,0 +1,64 @@
+.property-card {
+    display: grid;
+
+    gap: 1em;
+    -webkit-box-shadow: 9px 10px 57px -30px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 9px 10px 57px -30px rgba(0, 0, 0, 0.565);
+    box-shadow: 9px 10px 57px -30px rgba(0, 0, 0, 0.598);
+    max-width: 950px;
+    min-width: 100%;
+    border-radius:25px;
+
+    position: relative;
+
+    .property-status {
+        @include btn;
+        @include btn-orange;
+        max-width: max-content;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        padding: .5em 1em;
+        font-size: .9rem;
+    }
+    img {
+        border-radius: 25px 25px 0 0;
+    }
+}
+
+
+
+.property-box {
+    padding:  .9em 1.5em;
+    @include grid(unset, 1em);
+    place-content: start;
+    text-align: left;
+}
+
+.property-title {
+    font-weight: 600;
+}
+
+.property-rate {
+    background-color: $secondary;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 33px;
+    min-width: max-content;
+    max-width: max-content;
+
+}
+
+.property-footer {
+    @include flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    padding:  .9em 1.5em;
+    color: $grey;
+    border-top: 1px solid #e8e8e8;
+    white-space: nowrap;
+    gap: .5em;
+
+
+}

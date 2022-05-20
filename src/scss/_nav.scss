@@ -1,0 +1,54 @@
+.barra {
+
+    background: #000000;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.site-navigation {
+    @include flex;
+    @include container;
+    justify-content: space-between;
+    position: relative;
+    z-index: 5;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-links {
+    @include flex;
+    gap: 2em;
+   
+    li {
+        padding: 1.8em 0;
+        border: 2px solid transparent;
+        cursor: pointer;
+         a {
+              color: white;
+              font-weight: 400;
+         }
+         &:hover     {
+
+             border-bottom: 2px solid $primary
+         }
+    }
+
+}
+
+.nav-search {
+    @include flex;
+    gap: 1em;
+
+    i {
+        color: white;
+    }
+}

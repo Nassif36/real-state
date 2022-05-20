@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REAL STATE</title>
+    <link rel="stylesheet" href="./src/css/app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f69e951070.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    
+
+
+    <header class="site-header">
+        <div class="barra">
+               <nav class="site-navigation">
+                   <a href="index.html" class="logo"><img src="./src/img/logo.webp" alt=""></a>
+
+                   <ul class="nav-links">
+                       
+                       <li><a href="">Home</a></li>
+                       <li><a href="">About</a></li>
+                       <li><a href="">Property</a></li>
+                       <li><a href="">Blog</a></li>
+                       <li><a href="">Contact</a></li>
+                   </ul>
+
+                   <ul class="nav-search">
+                       <i class="fas fa-search"></i>
+                       <button class="btn-orange">Add Property</button>
+                   </ul>
+               </nav>
+        </div>
+     
+
+        <section class="site-hero">
+            <h1>Find your best Property</h1>
+            <p>Esteem spirit temper too say adieus who direct esteem.</p>
+
+            <form action="#" class="hero-form">
+                <div class="field">
+                    <label for="location">Location</label>
+                    <input type="text" name="location">
+                    
+                </div>
+                <div class="field">
+                    <label for="property-type">Property Type</label>
+                    <select name="property-type" id="">
+                        <option value="">Apartment</option>
+                        <option value="">House</option>
+                        <option value="">Etc</option>
+                    </select>
+                    
+                </div>
+                <div class="field">
+                    <label for="">Bed Rooms</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="">Bath Rooms</label>
+                    <select>
+                        <option value="1">1</option>
+                        <option value="1">2</option>
+                        <option value="1">3</option>
+                        <option value="1">4</option>
+                        <option value="1">5</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <i class="fas fa-search"></i>
+                </div>
+            </form>
+        </section>
+    </header>
+
+    <main class="site-main">
+
+        
+        <section class="section-popular">
+            <div class="title">
+                <h2>Popular Properties</h2>
+            </div>
+            <div class="grid-3" id="properties">
+                <!--ACA SE IMPRIMEN LAS PROPIEDADES DEL JSON-->
+
+                <!-- <article class="property-card">
+                    <span class="property-status">For sale</span>
+                    <img src="/src/img/hero-bg.jpg" alt="">
+                    <div class="property-box">
+                        
+                        <span class="property-title">Comfortable Apartment in Palace</span>
+                     
+                        <span class="property-rate">From $20k</span>
+                    </div>
+                    <div class="property-footer">
+                        <div class="property-icon">
+                            <i class="fas fa-cube"></i>
+                            <span>1200 Sqft</span>
+                        </div>
+                        <div class="property-icon">
+                            <i class="fas fa-bed"></i>
+                            <span>2 Bed</span>
+                        </div>
+                        <div class="property-icon">
+                            <i class="fas fa-bath"></i>
+                            <span>2 Bath</span>
+                        </div>
+                    </div>
+                </article> -->
+                
+            </div>
+            <button class="btn-orange">More Properties</button>
+        </section>
+    </main>
+
+    <section class="section-sale">
+        <div class="swiper" id="swiper">
+            <div class="swiper-wrapper" id="outputSlider">
+
+            
+            <!-- <div class="swiper-slide sale-card">
+                <span class="sale-status">FOR SALE</span>
+                <p>Blue haven modern home</p>
+                <div class="property-footer">
+                    <div class="property-icon">
+                        <i class="fas fa-cube"></i>
+                        <span>1200 Sqft</span>
+                    </div>
+                    <div class="property-icon">
+                        <i class="fas fa-bed"></i>
+                        <span>2 Bed</span>
+                    </div>
+                    <div class="property-icon">
+                        <i class="fas fa-bath"></i>
+                        <span>2 Bath</span>
+                    </div>
+                </div>
+                <span class="sale-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum delectus quod at voluptate dicta nam similique sunt quibusdam alias error.</span>
+                <div class="sale-buy">
+                    <p class="price">$4567</p>
+                    <button class="btn-orange">View Details</button>
+                </div>
+            </div> -->
+           
+            </div>
+             <div class="swiper-button-prev"></div>
+             <div class="swiper-button-next"></div>
+        </div>
+    </section>
+
+    <section class="section-faq">
+        <article class="grid-2">
+            <div class="faq-text">
+                <h2>Frequently ask</h2>
+                <ul>
+
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="./src/img/arrow.svg" class="list__arrow">
+                            <a  class="faq__link">¿What is the best choice?</a>
+                            
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <li class="faq__link faq__link--inside">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, esse.</li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="./src/img/arrow.svg" class="list__arrow">
+                            <a class="faq__link">¿What is the best choice?</a>
+                            
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <li href="#" class="faq__link faq__link--inside">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Explicabo, esse.</li>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="./src/img/arrow.svg" class="list__arrow">
+                            <a  class="faq__link">¿What is the best choice?</a>
+                            
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <li class="faq__link faq__link--inside">Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Explicabo, esse.</li>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="faq-img">
+                <img src="./src/img/faq.jpg" alt="">
+            </div>
+        </article>
+        <article class="grid-3">
+            <div class="sales-data">
+                <p class="value" akhi="2200">0</p>
+                <span>Properties for sale</span>
+            </div>
+            <div class="sales-data">
+                <p class="value" akhi="525">0</p>
+                <span>Clients</span>
+            </div>
+            <div class="sales-data">
+                <p class="value" akhi="5">0</p>
+                <span>Sold today</span>
+            </div>
+        </article>
+    </section>
+
+        <section class="section-testimonials">
+            <div class="swiper" id="swipertwo">
+                <div class="swiper-wrapper" id="testimonials">
+                    
+                    
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+     <script src="js/dom.js"></script>
+         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiperTwo = new Swiper('.swipertwo', {
+        direction: 'horizontal',
+        loop: false,
+
+        spaceBetween: 15,
+        slidesPerView: 1,
+        slidesPerGroup:1,
+        centeredSlides: true,
+        
+ 
+   
+
+
+        // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+        },
+
+        });
+
+         const swiper = new Swiper('.swiper', {
+         direction: 'horizontal',
+         loop: false,
+
+         spaceBetween: 15,
+         slidesPerView: 1,
+         slidesPerGroup:1,
+         centeredSlides: true,
+
+
+
+
+
+         // Navigation arrows
+         navigation: {
+         nextEl: '.swiper-button-next',
+         prevEl: '.swiper-button-prev',
+         },
+
+         });
+    </script>
+     <script src="js/scripts.js"></script>
+
+   
+
+   
+</body>
+</html>

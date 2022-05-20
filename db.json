@@ -1,0 +1,31 @@
+{
+    "props": [
+    {
+
+        "id":1,
+        "status":"Rent",
+        "name": "Comfortable Apartment in Palace",
+        "sqfts": "1600",
+        "rate":"20k",
+        "beds": 4,
+        "baths":2
+
+    }, 
+    {
+        "id": 2,
+        "status": "Sale",
+        "name": "Tiny House",
+        "sqfts":"1200",
+        "rate": "12k",
+        "beds": 1,
+        "baths": 1
+    }, {
+         "id": 3,
+         "status": "Sale",
+        "name": "Pool House",
+        "sqfts": "2500",
+        "rate": "30k",
+        "beds":6,
+        "baths":3
+    }]
+}

@@ -1,0 +1,129 @@
+.site-main {
+    padding: calc(5vh + 1em) 1em;
+}
+
+.section-popular {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+    padding: calc(5vh + 1em) 1em;
+}
+
+.grid-2 {
+    @include container;
+    @include grid(2, 2em);
+    padding: 1em 1em calc(10vh + 1em) 1em;
+
+    @media (max-width: $desktop) {
+        max-width: calc(90vw + 2rem);
+    }
+
+    @media (max-width: $netbook) {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    @media (max-width: $mobile) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.grid-3 {
+    @include container;
+    @include grid(3, 2em);
+    padding: 1em 1em calc(10vh + 1em) 1em;
+    @media (max-width: $desktop) {
+        max-width: calc(90vw + 2rem);
+    }
+     @media (max-width: $netbook) {
+         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+     }
+     @media (max-width: $mobile) {
+         grid-template-columns: 1fr;
+     }
+}
+
+.section-sale {
+    background: linear-gradient(to right, #02020283 100%, #02020283 0),
+    url("../img/sale-bg.jpg");
+    @include background;
+    .swiper {
+       .swiper-wrapper {
+           min-height: 100vh;
+
+       }
+    }
+}
+
+.swiper {
+    max-width: calc(100vw - 25%);
+    width: 100%;
+  
+
+    position: relative;
+    
+    .swiper-slide {
+        align-self: center;
+    }
+}
+
+
+.section-faq {
+    .grid-2 {
+        min-height: 60vh;
+        gap: 6em;
+    }
+}
+
+
+
+
+.section-testimonials {
+    background: linear-gradient(to right, #020202ee 100%, #02020283 0),
+        url(https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bm90ZWJvb2t8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60);
+    @include background;
+    background-attachment: fixed;
+    .swiper {
+         .swiper-button-prev,
+         .swiper-button-next {
+             padding: 3em;
+             border-radius: 100%;
+             border: 1px solid white;
+             transition: all .5s ease;
+
+             aspect-ratio: 1/1;
+             
+             &:hover {
+                 background-color: white;
+                 color: black;
+             }
+         }
+   
+        .swiper-wrapper {
+            min-height: 45vh;
+           
+        }
+        
+    }
+}
+
+.testimonial {
+    @include flex;
+    flex-direction: column  ;
+    text-align: center;
+
+    img {
+        width: 100%;
+        max-width:150px;
+        aspect-ratio: 1 / 1;
+        border-radius: 100%;
+        margin: 1.5em 1em;
+    }
+    blockquote {
+         max-width: 70ch;
+    }
+
+
+    color: white;
+}
