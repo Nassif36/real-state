@@ -80,7 +80,7 @@ for (let i = 0; i < properties.length; i++) {
     outputProperties = outputProperties + `
              <article class="property-card">
                 <span class="property-status">For ${properties[i].status}</span> 
-                <img src="/src/img/hero-bg.jpg" alt="">
+                <img src="./src/img/hero-bg.jpg" alt="">
                 <div class="property-box">
                 <p class="property-title">${properties[i].name}</p>
                 <span class="property-rate">From ${properties[i].rate}</span>
